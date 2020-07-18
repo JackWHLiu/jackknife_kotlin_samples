@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "jackknife_kotlin_samples"
