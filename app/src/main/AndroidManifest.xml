@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data android:name="com.lwh.jackknife.DefaultGlobalConfig" android:value="GlobalConfig"/>
+        <!-- 不配置GlobalConfig，默认就是使用的DefaultGlobalConfig，你也可以自己实现GlobalConfig接口，
+        然后添加你自定义GlobalConfig的class配置 -->
+<!--        <meta-data android:name="com.lwh.jackknife.DefaultGlobalConfig" android:value="GlobalConfig"/>-->
     </application>
 
 </manifest>
