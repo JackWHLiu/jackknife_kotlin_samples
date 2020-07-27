@@ -38,5 +38,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //第二步，添加依赖库
-    implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.9.6'
+    implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.9.13'
 }
