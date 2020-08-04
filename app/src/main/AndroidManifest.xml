@@ -10,17 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MenuListActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 无论你配不配GlobalConfig，如果你使用的com.lwh.jackknife.BaseApplication或其子类，
-        系统会自定义添加DefaultGlobalConfig，你也可以自己实现GlobalConfig接口，
-        然后添加你自定义GlobalConfig的class配置 -->
-<!--        <meta-data android:name="com.lwh.jackknife.DefaultGlobalConfig" android:value="GlobalConfig"/>-->
+        <activity
+            android:name=".IntroduceActivity"
+            android:screenOrientation="portrait" />
+        <meta-data android:name="com.example.jackknife.ARouterGlobalConfig"
+            android:value="GlobalConfig"/>
     </application>
 
 </manifest>
