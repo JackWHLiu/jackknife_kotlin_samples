@@ -8,7 +8,7 @@ import com.lwh.jackknife.GlobalConfig
 
 /**
  * 追加GlobalConfig配置，只要使用了com.lwh.jackknife.BaseApplication，就会加载默认配置DefaultGlobalConfig，
- * 用于打印声明周期的日志。同样的，需要GlobalConfig生效，需要在AndroidManifest.xml中的application标签配置
+ * 用于打印声明周期的日志。GlobalConfig可以配置多个哦！同样的，需要GlobalConfig生效，需要在AndroidManifest.xml中的application标签配置
  * com.lwh.jackknife.BaseApplication。
  */
 class ARouterGlobalConfig : GlobalConfig {
