@@ -11,6 +11,6 @@
 已演示功能
 
 - 通过GlobalConfig配置Application、Activity和Fragment的生命周期
-- Databinding自动绑定控件id
+- Databinding无声明式控件id绑定
 
 
