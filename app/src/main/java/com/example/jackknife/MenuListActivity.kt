@@ -15,6 +15,7 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
     val menus : MutableList<String> by lazy {
         var items = ArrayList<String>()
         items.add("简介")
+        items.add("运行时权限申请")
         items
     }
 
@@ -28,7 +29,8 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
         val adapter = MenuListAdapter(menus)
         adapter.setOnItemClickListener { view, viewType, data, position ->
             when (position) {
-               0 -> open(ARouterPath.ACTIVITY_INTRODUCE)
+                0 -> open(ARouterPath.ACTIVITY_INTRODUCE)
+                1 -> open(ARouterPath.ACTIVITY_REQUEST_PERMISSION)
             }
         }
         rv_menu_list.adapter = adapter
