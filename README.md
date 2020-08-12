@@ -1,6 +1,6 @@
 # jackknife_kotlin_samples
 
-基于jackknife版本：4.10.1  https://github.com/JackWHLiu/jackknife
+基于jackknife版本：4.10.18  https://github.com/JackWHLiu/jackknife
 
 可使用开发模板 https://github.com/JackWHLiu/jackknife-mvvm-templates
 
