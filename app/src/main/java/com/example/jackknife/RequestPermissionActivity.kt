@@ -19,10 +19,11 @@ class RequestPermissionActivity : BaseActivity<ActivityRequestPermissionBinding>
     }
 
     override fun initData(savedInstanceState: Bundle?) {
+        //权限申请API
         PermissionManager
             .with(this)
             .runtime()
-            .permission(Permission.WRITE_EXTERNAL_STORAGE)
+            .permission(Permission.WRITE_EXTERNAL_STORAGE, Permission.RECORD_AUDIO)
             .onGranted() {
                 toast("已授予权限")
             }

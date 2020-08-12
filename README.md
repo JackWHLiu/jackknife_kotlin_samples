@@ -13,5 +13,6 @@
 - 通过GlobalConfig配置Application、Activity和Fragment的生命周期
 - Databinding无声明式控件id绑定
 - 运行时权限申请
+- 崩溃信息收集
 
 

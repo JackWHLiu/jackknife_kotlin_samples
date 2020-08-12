@@ -16,6 +16,7 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
         var items = ArrayList<String>()
         items.add("简介")
         items.add("运行时权限申请")
+        items.add("多通道崩溃信息收集")
         items
     }
 
@@ -31,6 +32,7 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
             when (position) {
                 0 -> open(ARouterPath.ACTIVITY_INTRODUCE)
                 1 -> open(ARouterPath.ACTIVITY_REQUEST_PERMISSION)
+                2 -> open(ARouterPath.ACTIVITY_BUGS_KILLER)
             }
         }
         rv_menu_list.adapter = adapter
