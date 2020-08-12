@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BugsKillerActivity"></activity>
+        <activity
+            android:name=".BugsKillerActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".RequestPermissionActivity"
             android:screenOrientation="portrait" />

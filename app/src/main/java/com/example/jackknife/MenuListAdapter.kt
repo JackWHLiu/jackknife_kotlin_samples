@@ -5,7 +5,7 @@ import android.widget.TextView
 import com.lwh.jackknife.adapter.JKAdapter
 import com.lwh.jackknife.adapter.JKViewHolder
 
-class MenuListAdapter(infos: MutableList<String>) : JKAdapter<String>(infos) {
+class MenuListAdapter(items: MutableList<String>) : JKAdapter<String>(items) {
 
     override fun getLayoutId(viewType: Int): Int {
         return android.R.layout.simple_list_item_1
