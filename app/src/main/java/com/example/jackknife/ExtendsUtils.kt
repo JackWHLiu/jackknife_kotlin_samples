@@ -4,6 +4,7 @@ import android.app.Activity
 import android.widget.Toast
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.launcher.ARouter
+import com.lwh.jackknife.util.ToastUtils
 
 fun Activity.open(path: String, build: Postcard.()-> Unit = {}) {
     val postcard = ARouter.getInstance().build(path)
@@ -17,5 +18,5 @@ fun Activity.openWithFinish(path: String, build: Postcard.()-> Unit = {}) {
 }
 
 fun Activity.toast(tips: String) {
-    Toast.makeText(this, tips, Toast.LENGTH_SHORT).show()
+    ToastUtils.showShort(tips)
 }

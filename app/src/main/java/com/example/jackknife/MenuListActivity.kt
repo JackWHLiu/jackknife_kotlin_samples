@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.bean.Menu
 import com.example.jackknife.databinding.ActivityMenuListBinding
 import com.lwh.jackknife.BaseActivity
 import kotlinx.android.synthetic.main.activity_menu_list.*
@@ -12,11 +13,11 @@ import site.doramusic.app.util.open
 @Route(path = ARouterPath.ACTIVITY_MENU_LIST)
 class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
 
-    val menus : MutableList<String> by lazy {
-        var items = ArrayList<String>()
-        items.add("简介")
-        items.add("运行时权限申请")
-        items.add("多通道崩溃信息收集")
+    private val menus : MutableList<Menu> by lazy {
+        val items = ArrayList<Menu>()
+        items.add(Menu(0, "简介",             ARouterPath.ACTIVITY_INTRODUCE))
+        items.add(Menu(1, "运行时权限申请",    ARouterPath.ACTIVITY_REQUEST_PERMISSION))
+        items.add(Menu(2, "多通道崩溃信息收集", ARouterPath.ACTIVITY_BUGS_KILLER))
         items
     }
 
@@ -28,11 +29,12 @@ class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
         rv_menu_list.layoutManager = LinearLayoutManager(this)
         rv_menu_list.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         val adapter = MenuListAdapter(menus)
-        adapter.setOnItemClickListener { view, viewType, data, position ->
+        adapter.setOnItemClickListener { _, _, data, position ->
+            data as Menu
             when (position) {
-                0 -> open(ARouterPath.ACTIVITY_INTRODUCE)
-                1 -> open(ARouterPath.ACTIVITY_REQUEST_PERMISSION)
-                2 -> open(ARouterPath.ACTIVITY_BUGS_KILLER)
+                data.id.toInt() -> {
+                    open(data.path)
+                }
             }
         }
         rv_menu_list.adapter = adapter

@@ -2,6 +2,8 @@ package com.example.jackknife
 
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.ARouterPath
+import com.example.jackknife.R
 import com.example.jackknife.databinding.ActivityRequestPermissionBinding
 import com.lwh.jackknife.BaseActivity
 import com.lwh.jackknife.permission.PermissionManager

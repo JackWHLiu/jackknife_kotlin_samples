@@ -1,25 +1,26 @@
 package com.example.jackknife
 
 import android.view.View
-import android.widget.TextView
+import com.example.jackknife.bean.Menu
+import com.example.jackknife.databinding.ItemMenuListBinding
 import com.lwh.jackknife.adapter.JKAdapter
 import com.lwh.jackknife.adapter.JKViewHolder
 
-class MenuListAdapter(items: MutableList<String>) : JKAdapter<String>(items) {
+class MenuListAdapter(menus: MutableList<Menu>) : JKAdapter<Menu, ItemMenuListBinding>(menus) {
 
     override fun getLayoutId(viewType: Int): Int {
-        return android.R.layout.simple_list_item_1
+        return R.layout.item_menu_list
     }
 
-    class MenuListViewHolder(itemView: View?) : JKViewHolder<String>(itemView) {
+    class MenuListViewHolder(itemView: View?) : JKViewHolder<Menu, ItemMenuListBinding>(itemView) {
 
-        override fun setData(data: String, position: Int) {
-            val tv = itemView.findViewById<TextView>(android.R.id.text1)
-            tv.text = data
+        override fun setData(binding: ItemMenuListBinding, data: Menu, position: Int) {
+            //固定写法，先这样吧，以后考虑自动赋值
+            binding.menu = data
         }
     }
 
-    override fun getHolder(v: View, viewType: Int): JKViewHolder<String> {
+    override fun getHolder(v: View, viewType: Int): JKViewHolder<Menu, ItemMenuListBinding> {
         return MenuListViewHolder(v)
     }
 }
