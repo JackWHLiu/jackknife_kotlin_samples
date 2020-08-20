@@ -1,4 +1,4 @@
-package com.example.jackknife
+package com.example.jackknife.lifecycle
 
 import android.app.Application
 import android.content.Context
@@ -17,7 +17,7 @@ class ARouterGlobalConfig : GlobalConfig {
         context: Context?,
         lifecycles: MutableList<ApplicationLifecycleCallbacks>?
     ) {
-        lifecycles!!.add(AppLifecycle())
+        lifecycles!!.add(ARouterAppLifecycle())
     }
 
     override fun injectFragmentLifecycle(
@@ -30,6 +30,6 @@ class ARouterGlobalConfig : GlobalConfig {
         context: Context?,
         lifecycles: MutableList<Application.ActivityLifecycleCallbacks>?
     ) {
-        lifecycles!!.add(ActivityLifecycle())
+        lifecycles!!.add(ARouterActivityLifecycle())
     }
 }

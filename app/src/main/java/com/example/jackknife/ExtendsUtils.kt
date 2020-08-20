@@ -1,18 +1,17 @@
-package site.doramusic.app.util
+package com.example.jackknife
 
 import android.app.Activity
-import android.widget.Toast
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.launcher.ARouter
 import com.lwh.jackknife.util.ToastUtils
 
-fun Activity.open(path: String, build: Postcard.()-> Unit = {}) {
+fun Activity.open(path: String, build: Postcard.() -> Unit = {}) {
     val postcard = ARouter.getInstance().build(path)
     postcard.build()
     postcard.navigation()
 }
 
-fun Activity.openWithFinish(path: String, build: Postcard.()-> Unit = {}) {
+fun Activity.openWithFinish(path: String, build: Postcard.() -> Unit = {}) {
     open(path, build)
     finish()
 }

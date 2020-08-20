@@ -1,11 +1,11 @@
-package com.example.jackknife
+package com.example.jackknife.lifecycle
 
 import android.app.Application
 import android.content.Context
 import com.alibaba.android.arouter.launcher.ARouter
 import com.lwh.jackknife.ApplicationLifecycleCallbacks
 
-class AppLifecycle : ApplicationLifecycleCallbacks {
+class ARouterAppLifecycle : ApplicationLifecycleCallbacks {
 
     override fun attachBaseContext(base: Context?) {
     }
