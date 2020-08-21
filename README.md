@@ -1,4 +1,5 @@
 # jackknife_kotlin_samples
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 基于jackknife版本：4.10.27  https://github.com/JackWHLiu/jackknife
 
