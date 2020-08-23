@@ -18,9 +18,9 @@ android {
             release {
                 if (project.hasProperty('../jks/jackknife_kotlin_samples.jks')) {
                     storeFile file('../jks/jackknife_kotlin_samples.jks')
-                    storePassword 123456
-                    keyAlias jackknife_kotlin_samples
-                    keyPassword 123456
+                    storePassword '123456'
+                    keyAlias 'jackknife_kotlin_samples'
+                    keyPassword '123456'
                 }
             }
         }
