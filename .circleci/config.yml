@@ -15,5 +15,5 @@ jobs:
       - run:
           command: ./gradlew build
       - store_artifacts:
-          path: /JackWHLiu/jackknife_kotlin_samples
-          destination: app_release.apk
+          path: release
+          destination: app-release.apk
