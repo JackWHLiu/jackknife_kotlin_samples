@@ -13,8 +13,6 @@ jobs:
     steps:
       - checkout
       - run:
-          command: ./gradlew build;
-                    mkdir /apk/jackknife_kotlin_samples;
+          command: ./gradlew build
       - store_artifacts:
-          path: release/app-release.apk
-          destination: /apk/jackknife_kotlin_samples
+          path: /home/circleci/project/release/app-release.apk
