@@ -6,7 +6,7 @@
 
 也看Java例子 https://github.com/JackWHLiu/jackknife_java_samples
 
-https://23-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk
+apk下载 https://23-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk
 
 已演示功能
 
