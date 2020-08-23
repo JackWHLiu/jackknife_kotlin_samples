@@ -6,10 +6,6 @@
 
 也看Java例子 https://github.com/JackWHLiu/jackknife_java_samples
 
-| 扫码 or [点击下载](https://github.com/JackWHLiu/jackknife_kotlin_samples/raw/master/preview/app-release.apk)  |
-| :--------:   |
-| <img src="/preview/icon/apk_qr.png" alt="图-1：扫码下载体验" width="260px" />       |
-
 已演示功能
 
 - 通过GlobalConfig配置Application、Activity和Fragment的生命周期
@@ -18,4 +14,7 @@
 - 崩溃信息收集
 
 GPL-3.0许可证要求您如果发行修改后的软件，也必须开放源代码
+
+撸码不易，如果觉得帮您节省了大量的开发时间，对您有所帮助，欢迎您的赞赏！
+![avatar](https://github.com/JackWHLiu/jackknife_kotlin_samples/blob/master/support/alipay.jpg)
 
