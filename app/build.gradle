@@ -16,12 +16,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfigs {
             release {
-                if (project.hasProperty('jks/jackknife_kotlin_samples.jks')) {
-                    storeFile file('jks/jackknife_kotlin_samples.jks')
-                    storePassword '123456'
-                    keyAlias 'jackknife_kotlin_samples'
-                    keyPassword '123456'
-                }
+                storeFile file('jks/jackknife_kotlin_samples.jks')
+                storePassword '123456'
+                keyAlias 'jackknife_kotlin_samples'
+                keyPassword '123456'
             }
         }
 //        //Java版ARouter配置
