@@ -6,6 +6,10 @@
 
 也看Java例子 https://github.com/JackWHLiu/jackknife_java_samples
 
+| 扫码 or [点击下载](https://github.com/JackWHLiu/jackknife_kotlin_samples/raw/master/preview/app-release.apk)  |
+| :--------:   |
+| <img src="/preview/icon/apk_qr.png" alt="图-1：扫码下载体验" width="260px" />       |
+
 已演示功能
 
 - 通过GlobalConfig配置Application、Activity和Fragment的生命周期
