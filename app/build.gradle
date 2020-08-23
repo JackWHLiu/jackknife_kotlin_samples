@@ -16,7 +16,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfigs {
             release {
-                storeFile file('jks/jackknife_kotlin_samples.jks')
+                //默认从app目录下找
+                storeFile file('../jks/jackknife_kotlin_samples.jks')
                 storePassword '123456'
                 keyAlias 'jackknife_kotlin_samples'
                 keyPassword '123456'
