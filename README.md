@@ -17,7 +17,7 @@
 - 通过GlobalConfig配置Application、Activity和Fragment的生命周期
 - Databinding无声明式控件id绑定
 - 运行时权限申请
-- 崩溃信息收集
+- 崩溃信息收集（仅提供代码参照，暂不支持Kotlin项目）
 
 GPL-3.0许可证要求您如果发行修改后的软件，也必须开放源代码
 
