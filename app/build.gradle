@@ -83,5 +83,5 @@ dependencies {
     implementation 'com.just.agentweb:agentweb:4.1.2'
 
     //第二步，添加依赖库
-    implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.10.29'
+    implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.10.30'
 }
