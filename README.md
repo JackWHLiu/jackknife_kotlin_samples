@@ -1,4 +1,4 @@
-基于jackknife版本：4.10.27  https://github.com/JackWHLiu/jackknife
+基于jackknife版本：4.10.29  https://github.com/JackWHLiu/jackknife
 
 可使用开发模板 https://github.com/JackWHLiu/jackknife-mvvm-templates
 
