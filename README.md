@@ -6,7 +6,11 @@
 
 也看Java例子 https://github.com/JackWHLiu/jackknife_java_samples
 
-apk下载 https://23-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk
+扫码下载
+
+| 扫码 or [点击下载](https://23-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk)  |
+| :--------:   |
+| <img src="/qrcode/qrcode.png" alt="图-1：扫码下载体验" width="260px" />       |
 
 已演示功能
 
