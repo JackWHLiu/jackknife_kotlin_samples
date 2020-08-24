@@ -23,7 +23,7 @@ GPL-3.0许可证要求您如果发行修改后的软件，也必须开放源代�
 
 撸码不易，如果觉得帮您节省了大量的开发时间，对您有所帮助，欢迎您的赞赏！
 
-| 打赏作者                                                     |
+| 支付宝打赏                                                     |
 | ------------------------------------------------------------ |
 | <img src="https://github.com/JackWHLiu/jackknife_kotlin_samples/blob/master/support/alipay.jpg" alt="支付宝打赏作者" width="260px" /> |
 
