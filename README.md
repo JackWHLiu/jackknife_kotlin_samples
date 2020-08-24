@@ -10,7 +10,7 @@
 
 | 扫码 or [点击下载](https://23-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk)  |
 | :--------:   |
-| <img src="/qrcode/qrcode.png" alt="图-1：扫码下载体验" width="260px" />       |
+| <img src="/qrcode/qrcode.png" alt="扫码下载体验" width="260px" />       |
 
 已演示功能
 
@@ -22,5 +22,5 @@
 GPL-3.0许可证要求您如果发行修改后的软件，也必须开放源代码
 
 撸码不易，如果觉得帮您节省了大量的开发时间，对您有所帮助，欢迎您的赞赏！
-![avatar](https://github.com/JackWHLiu/jackknife_kotlin_samples/blob/master/support/alipay.jpg)
+<img src="https://github.com/JackWHLiu/jackknife_kotlin_samples/blob/master/support/alipay.jpg" alt="支付宝打赏作者" width="260px" />
 
