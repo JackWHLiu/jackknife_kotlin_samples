@@ -8,7 +8,7 @@
 
 扫码下载
 
-| 扫码 or [点击下载](https://37-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk) |
+| 扫码 or [点击下载](https://41-280676759-gh.circle-artifacts.com/0/apks/release/app-release.apk) |
 | :----------------------------------------------------------: |
 | <img src="/qrcode/qrcode.png" alt="扫码下载体验" width="260px" /> |
 
