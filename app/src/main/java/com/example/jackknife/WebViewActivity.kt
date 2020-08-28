@@ -8,6 +8,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.jackknife.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import com.lwh.jackknife.BaseActivity
+import kotlinx.android.synthetic.main.activity_web_view.*
 
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
@@ -20,11 +21,9 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     override fun initData(savedInstanceState: Bundle?) {
         agentWeb = AgentWeb.with(this)
-            .setAgentWebParent(
-                mBinding.rlWebPage, LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams
-                        .MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT
-                )
+            .setAgentWebParent(rl_web_page,
+                LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT)
             )
             .useDefaultIndicator()
             .createAgentWeb()
