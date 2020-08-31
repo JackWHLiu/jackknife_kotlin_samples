@@ -1,6 +1,6 @@
 ## JackKnife SDK官方使用案例 [![CircleCI](https://circleci.com/gh/JackWHLiu/jackknife_kotlin_samples.svg?style=shield)](https://circleci.com/gh/JackWHLiu/jackknife_kotlin_samples) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a21d48d466644cdbcb57a1889abea5b)](https://www.codacy.com/app/JackWHLiu/jackknife_kotlin_samples?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JackWHLiu/jackknife_kotlin_samples&amp;utm_campaign=Badge_Grade)
 
-基于jackknife版本：4.10.32  https://github.com/JackWHLiu/jackknife
+基于jackknife版本：4.10.34  https://github.com/JackWHLiu/jackknife
 
 可使用开发模板 https://github.com/JackWHLiu/jackknife-mvvm-templates
 
