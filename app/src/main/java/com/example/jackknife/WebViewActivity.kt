@@ -1,5 +1,6 @@
 package com.example.jackknife
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.ViewGroup
@@ -8,15 +9,23 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.jackknife.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import com.lwh.jackknife.BaseActivity
+import com.lwh.jackknife.util.IntentUtils
 import kotlinx.android.synthetic.main.activity_web_view.*
 
 @Route(path = ARouterPath.ACTIVITY_WEB_VIEW)
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     lateinit var agentWeb: AgentWeb
+    var url: String = "https://github.com/JackWHLiu/jackknife"
 
     override fun getLayoutId(): Int {
         return R.layout.activity_web_view
+    }
+
+    override fun onGetExtras(bundle: Bundle?, intent: Intent?) {
+        if (IntentUtils.hasExtra(intent, "url")) {
+            url = IntentUtils.getStringExtra(intent, "url")
+        }
     }
 
     override fun initData(savedInstanceState: Bundle?) {
@@ -28,7 +37,7 @@ class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
             .useDefaultIndicator()
             .createAgentWeb()
             .ready()
-            .go("https://github.com/JackWHLiu/jackknife")
+            .go(url)
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
