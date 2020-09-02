@@ -17,6 +17,7 @@ class MenuListAdapter(menus: MutableList<Menu>) : JKAdapter<Menu, ItemMenuListBi
         override fun setData(binding: ItemMenuListBinding, data: Menu, position: Int) {
             //固定写法，先这样吧，以后考虑自动赋值
             binding.menu = data
+            binding.tvMenuItemId.text = (position + 1).toString()
         }
     }
 

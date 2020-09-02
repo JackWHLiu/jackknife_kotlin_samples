@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bitmap_display"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/dora_logo" />
+
+        <Button
+            android:id="@+id/btn_bitmap_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="倒影" />
+
+        <Button
+            android:id="@+id/btn_bitmap_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="黑白" />
+
+        <Button
+            android:id="@+id/btn_bitmap_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="裁剪成圆形" />
+
+        <Button
+            android:id="@+id/btn_bitmap_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="裁剪成圆角矩形" />
+    </LinearLayout>
+</layout>

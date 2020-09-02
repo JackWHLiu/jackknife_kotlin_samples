@@ -13,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".BitmapActivity"></activity>
+        <activity
+            android:name=".TipsActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ExtrasActivity"
             android:screenOrientation="portrait" />

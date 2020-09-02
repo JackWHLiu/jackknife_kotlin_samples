@@ -16,13 +16,13 @@ import kotlinx.android.synthetic.main.activity_web_view.*
 class WebViewActivity : BaseActivity<ActivityWebViewBinding>() {
 
     lateinit var agentWeb: AgentWeb
-    var url: String = "https://github.com/JackWHLiu/jackknife"
+    var url = "https://github.com/JackWHLiu/jackknife"
 
     override fun getLayoutId(): Int {
         return R.layout.activity_web_view
     }
 
-    override fun onGetExtras(bundle: Bundle?, intent: Intent?) {
+    override fun onGetExtras(bundle: Bundle?, intent: Intent) {
         if (IntentUtils.hasExtra(intent, "url")) {
             url = IntentUtils.getStringExtra(intent, "url")
         }
