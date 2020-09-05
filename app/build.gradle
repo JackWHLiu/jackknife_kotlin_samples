@@ -84,4 +84,5 @@ dependencies {
 
     //第二步，添加依赖库
     implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.10.36'
+    implementation 'com.github.JackWHLiu.jackknife:jackknife-widget:4.9.2'
 }

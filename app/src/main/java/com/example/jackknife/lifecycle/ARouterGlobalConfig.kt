@@ -7,9 +7,9 @@ import com.lwh.jackknife.ApplicationLifecycleCallbacks
 import com.lwh.jackknife.GlobalConfig
 
 /**
- * 追加GlobalConfig配置，只要使用了com.lwh.jackknife.BaseApplication，就会加载默认配置DefaultGlobalConfig，
- * 用于打印生命周期的日志。GlobalConfig可以配置多个哦！同样的，需要GlobalConfig生效，需要在
- * AndroidManifest.xml中的application标签配置com.lwh.jackknife.BaseApplication。
+ * ARouter的初始化的封装。追加GlobalConfig配置，只要使用了com.lwh.jackknife.BaseApplication，就会加载默认配
+ * 置DefaultGlobalConfig，用于打印生命周期的日志。GlobalConfig可以配置多个哦！同样的，需要GlobalConfig生效，
+ * 需要在AndroidManifest.xml中的application标签配置com.lwh.jackknife.BaseApplication。
  */
 class ARouterGlobalConfig : GlobalConfig {
 

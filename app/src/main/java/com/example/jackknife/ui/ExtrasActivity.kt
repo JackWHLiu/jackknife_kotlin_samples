@@ -1,8 +1,11 @@
-package com.example.jackknife
+package com.example.jackknife.ui
 
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.ARouterPath
+import com.example.jackknife.R
 import com.example.jackknife.databinding.ActivityExtrasBinding
+import com.example.jackknife.open
 import com.lwh.jackknife.BaseActivity
 
 @Route(path = ARouterPath.ACTIVITY_EXTRAS)

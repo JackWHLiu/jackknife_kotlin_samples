@@ -1,5 +1,8 @@
 package com.example.jackknife;
 
+/**
+ * 这是一张本游乐园全景地图，可以告诉你哪个地方怎么走。
+ */
 public interface ARouterPath {
 
     String GROUP_JK = "/JK";
@@ -11,4 +14,5 @@ public interface ARouterPath {
     String ACTIVITY_EXTRAS = GROUP_JK + "/ExtrasActivity";
     String ACTIVITY_TIPS = GROUP_JK + "/TipsActivity";
     String ACTIVITY_BITMAP = GROUP_JK + "/BitmapActivity";
+    String ACTIVITY_BOTTOM_MENU = GROUP_JK + "/BottomMenuActivity";
 }

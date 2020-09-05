@@ -11,16 +11,28 @@ import com.lwh.jackknife.BaseActivity
 import kotlinx.android.synthetic.main.activity_menu_list.*
 import javax.inject.Inject
 
+/**
+ * 从菜单开始了解JackKnife，可以更快的了解我哦。
+ */
 @Route(path = ARouterPath.ACTIVITY_MENU_LIST)
 class MenuListActivity : BaseActivity<ActivityMenuListBinding>() {
 
+    /**
+     * 注入菜单列表。
+     */
     @Inject
     lateinit var model: MenuModel
 
+    /**
+     * 告诉系统布局在什么地方。
+     */
     override fun getLayoutId(): Int {
         return R.layout.activity_menu_list
     }
 
+    /**
+     * 初始化数据的地方，在Activity的onCreate()之后调用。
+     */
     override fun initData(savedInstanceState: Bundle?) {
         DaggerMenuComponent.builder()
             .appComponent((application as SampleApp).appComponent)

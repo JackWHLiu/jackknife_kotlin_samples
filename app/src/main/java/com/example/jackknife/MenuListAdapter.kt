@@ -6,6 +6,9 @@ import com.example.jackknife.databinding.ItemMenuListBinding
 import com.lwh.jackknife.adapter.JKAdapter
 import com.lwh.jackknife.adapter.JKViewHolder
 
+/**
+ * 继承JKAdapter可以实现item的数据加载。
+ */
 class MenuListAdapter(menus: MutableList<Menu>) : JKAdapter<Menu, ItemMenuListBinding>(menus) {
 
     override fun getLayoutId(viewType: Int): Int {
@@ -15,7 +18,6 @@ class MenuListAdapter(menus: MutableList<Menu>) : JKAdapter<Menu, ItemMenuListBi
     class MenuListViewHolder(itemView: View?) : JKViewHolder<Menu, ItemMenuListBinding>(itemView) {
 
         override fun setData(binding: ItemMenuListBinding, data: Menu, position: Int) {
-            //固定写法，先这样吧，以后考虑自动赋值
             binding.menu = data
             binding.tvMenuItemId.text = (position + 1).toString()
         }

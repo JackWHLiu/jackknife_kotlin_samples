@@ -1,7 +1,9 @@
-package com.example.jackknife
+package com.example.jackknife.ui
 
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.ARouterPath
+import com.example.jackknife.R
 import com.example.jackknife.databinding.ActivityBugsKillerBinding
 import com.lwh.jackknife.BaseActivity
 import com.lwh.jackknife.bugskiller.DoraConfig

@@ -5,6 +5,9 @@ import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.launcher.ARouter
 import com.lwh.jackknife.util.ToastUtils
 
+/**
+ * 基于kotlin的扩展方法。
+ */
 fun Activity.open(path: String, build: Postcard.() -> Unit = {}) {
     val postcard = ARouter.getInstance().build(path)
     postcard.build()

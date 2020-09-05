@@ -1,8 +1,10 @@
-package com.example.jackknife
+package com.example.jackknife.ui
 
 import android.graphics.Color
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.ARouterPath
+import com.example.jackknife.R
 import com.example.jackknife.databinding.ActivityBitmapBinding
 import com.lwh.jackknife.BaseActivity
 import com.lwh.jackknife.util.ImageUtils

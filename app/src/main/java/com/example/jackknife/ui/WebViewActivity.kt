@@ -1,4 +1,4 @@
-package com.example.jackknife
+package com.example.jackknife.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.view.KeyEvent
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.example.jackknife.ARouterPath
+import com.example.jackknife.R
 import com.example.jackknife.databinding.ActivityWebViewBinding
 import com.just.agentweb.AgentWeb
 import com.lwh.jackknife.BaseActivity

@@ -13,24 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BitmapActivity"></activity>
+        <activity android:name=".ui.BottomMenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.BitmapActivity" />
         <activity
-            android:name=".TipsActivity"
+            android:name=".ui.TipsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ExtrasActivity"
+            android:name=".ui.ExtrasActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".WebViewActivity"
+            android:name=".ui.WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BugsKillerActivity"
+            android:name=".ui.BugsKillerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RequestPermissionActivity"
+            android:name=".ui.RequestPermissionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".IntroduceActivity"
+            android:name=".ui.IntroduceActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MenuListActivity"
