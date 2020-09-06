@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.jackknife"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -85,4 +85,5 @@ dependencies {
     //第二步，添加依赖库
     implementation 'com.github.JackWHLiu.jackknife:jackknife-mvvm:4.10.36'
     implementation 'com.github.JackWHLiu.jackknife:jackknife-widget:4.9.2'
+    implementation 'com.github.JackWHLiu.jackknife:jackknife-av:4.10.38'
 }

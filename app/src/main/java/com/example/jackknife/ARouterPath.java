@@ -15,4 +15,5 @@ public interface ARouterPath {
     String ACTIVITY_TIPS = GROUP_JK + "/TipsActivity";
     String ACTIVITY_BITMAP = GROUP_JK + "/BitmapActivity";
     String ACTIVITY_BOTTOM_MENU = GROUP_JK + "/BottomMenuActivity";
+    String ACTIVITY_TEST = GROUP_JK + "/TestActivity";
 }

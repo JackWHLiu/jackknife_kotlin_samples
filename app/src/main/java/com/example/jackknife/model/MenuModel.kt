@@ -20,6 +20,7 @@ class MenuModel {
         return mutableListOf(
             Menu(Color.MAGENTA, "游乐园简介", ARouterPath.ACTIVITY_INTRODUCE),
             Menu(Color.MAGENTA, "Star收藏一下不迷路", ARouterPath.ACTIVITY_WEB_VIEW),
+            Menu(Color.BLACK, "测试中", ARouterPath.ACTIVITY_TEST),
             Menu(Color.GREEN, "从底部弹出的菜单面板", ARouterPath.ACTIVITY_BOTTOM_MENU),
             Menu(Color.GRAY, "有用的小提示", ARouterPath.ACTIVITY_TIPS),
             Menu(Color.GRAY, "图像变换", ARouterPath.ACTIVITY_BITMAP),
