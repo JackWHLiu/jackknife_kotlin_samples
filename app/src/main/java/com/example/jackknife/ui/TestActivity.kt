@@ -22,7 +22,7 @@ class TestActivity : BaseActivity<ActivityTestBinding>() {
         VideoUtils.addVideoBGM(
             sdRoot + "/input.mp4",
             sdRoot + "/input.mp3",
-            sdRoot + "output.mp4"
+            sdRoot + "/output.mp4"
         )
     }
 }
